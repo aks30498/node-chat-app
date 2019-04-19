@@ -8,11 +8,6 @@ socket.on('newMessage', function(message){
   console.log("New Message:" , message);
 });
 
-socket.emit('createMessage', {
-  to: "Someone",
-  text: "Reply to something",
-});
-
 socket.on('disconnect', function(){
   console.log('Disconnected from server');
 });
